@@ -20,7 +20,8 @@
 background = #0F1143
 background-alt = #070E88
 foreground = #C5C8C6
-workspace-bar = #3E2197
+;workspace-bar = #3E2197
+workspace-bar = #D11070
 primary = #D11070
 secondary = #8ABEB7
 alert = #A54242
@@ -170,7 +171,7 @@ label-connected = %{F#F0C674}%ifname%%{F-} %local_ip%
 type = internal/date
 interval = 1
 
-time = %H:%M
+time = %I:%M %p
 time-alt = %d:%m:%y
 
 label = %time%
