@@ -60,7 +60,7 @@ separator-foreground = ${colors.disabled}
 font-0 = monospace;2
 font-1 = komorebi gothic:pixelsize=13;3
 
-modules-left = xworkspaces xwindow
+modules-left = xworkspaces
 modules-center = time date
 modules-right = filesystem pulseaudio memory cpu wlan
 
