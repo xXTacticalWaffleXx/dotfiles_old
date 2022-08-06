@@ -3,8 +3,8 @@
 @import "styles/colors.rasi"
 
 * {
-    background-color:       @background;
-    text-color:             @foreground;
+    background-color:       @bg;
+    text-color:             @fg;
 	font:				 	"FantasqueSansMono Nerd Font 12";
 }
 
@@ -13,7 +13,7 @@ window {
     padding:    			25px;
     border:					1px;
     border-radius:          0px;
-    border-color:           @border;
+    border-color:           @fg;
     location:               center;
     y-offset:               -2em;
 }

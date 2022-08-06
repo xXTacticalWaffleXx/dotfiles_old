@@ -20,8 +20,8 @@ configuration {
 
 window {
     transparency:                   "real";
-    background-color:               @background;
-    text-color:                     @foreground;
+    background-color:               @bg;
+    text-color:                     @fg;
     border-radius:                  0px;
     height:                         28.5%;
     width:                          50%;
@@ -33,33 +33,33 @@ window {
 prompt {
     enabled: 						true;
     padding:                        0.5% 0.5% 0.5% 0%;
-	background-color: 				@background-alt;
-	text-color: 					@foreground;
+	background-color: 				@bg-alt;
+	text-color: 					@fg;
 }
 
 textbox-prompt-colon {
 	expand: 						false;
 	str: 							"System |";
-	background-color: 				@background-alt;
-	text-color: 					@foreground;
+	background-color: 				@bg-alt;
+	text-color: 					@fg;
     padding:                        0.5% 0.5% 0.5% 0%;
 }
 
 inputbar {
 	children: 						[ textbox-prompt-colon, prompt ];
-    background-color:               @background-alt;
-    text-color:                     @foreground;
+    background-color:               @bg-alt;
+    text-color:                     @fg;
     expand:                         false;
     border:                  		0.2% 0% 0.2% 0%;
     border-radius:                  12px;
-    border-color:                  	@border;
+    border-color:                  	@fg;
     margin:                         0% 21.3% 0% 0%;
     padding:                        0.5%;
     position:                       center;
 }
 
 listview {
-    background-color:               @background;
+    background-color:               @bg;
     margin:                         0% 0% 0% 0%;
     spacing:                        2%;
     cycle:                          true;
@@ -68,15 +68,15 @@ listview {
 }
 
 mainbox {
-    background-color:               @background;
+    background-color:               @bg;
     children:                       [ inputbar, listview ];
     spacing:                        3.5%;
     padding:                        4% 0% 0% 2%;
 }
 
 element {
-    background-color:               @background-alt;
-    text-color:                     @foreground;
+    background-color:               @bg;
+    text-color:                     @fg;
     orientation:                    horizontal;
     border-radius:                  25px;
 }
@@ -100,16 +100,16 @@ element alternate.urgent {
 
 element normal.active,
 element alternate.active {
-    background-color:               @background-alt;
+    background-color:               @bg;
     text-color:                     @foreground;
 }
 
 element selected {
-    background-color:               @selected;
+    background-color:               @bg-alt;
     text-color:                     @foreground;
     border:                  		0.2% 0% 0.2% 0%;
     border-radius:                  25px;
-    border-color:                  	@border;
+    border-color:                  	@fg;
 }
 
 element selected.urgent {
@@ -119,5 +119,5 @@ element selected.urgent {
 
 element selected.active {
     background-color:               @background-alt;
-    color:                          @foreground;
+    color:                          @fg;
 }
