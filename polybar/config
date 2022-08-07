@@ -61,7 +61,7 @@ separator-foreground = ${colors.disabled}
 font-0 = monospace;2
 font-1 = komorebi gothic:pixelsize=13;3
 
-modules-left = xworkspaces
+modules-left = xworkspaces playerctl
 modules-center = time date
 modules-right = filesystem pulseaudio memory cpu wlan
 
@@ -176,6 +176,11 @@ time-alt = %d:%m:%y
 
 label = %time%
 label-foreground = ${colors.primary}
+
+[module/playerctl]
+type = custom/script
+interval = 1
+exec = ~/.config/polybar/scripts/playerctl.sh
 
 [settings]
 screenchange-reload = true
