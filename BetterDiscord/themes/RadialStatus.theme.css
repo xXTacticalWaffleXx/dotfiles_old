@@ -19,8 +19,8 @@
   --rs-medium-width: 3px; /* Thickness of status border for User popout | MUST end in px */
   --rs-large-width: 4px; /* Thickness of status border for User profile | MUST end in px */
 
-  --rs-avatar-shape: 50%; /* 50% for round - 0% for square */
-
+  --rs-avatar-shape: 25%; /* 50% for round - 0% for square */
+  
   --rs-online-color: #43b581; /* Colour for online status */
   --rs-idle-color: #faa61a; /* Colour for idle status */
   --rs-dnd-color: #f04747; /* Colour for dnd status */
