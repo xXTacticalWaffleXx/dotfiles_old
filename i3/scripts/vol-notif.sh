@@ -1,3 +1,17 @@
+#copyright 2022 Luna Aphelion <luna-aphelion@outlook.com>
+
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+
+# You should have received a copy of the GNU General Public License
+
 #close all notifications with dunst, change this to an apropriate command if using a different notif daemon
 dunstctl close-all
 
@@ -15,7 +29,7 @@ if [[ $muted = "off" ]]; then
 elif [[ $volume > "20" ]]; then
  #use the high volume icon
  notify-send "$volume  $bar" -i "/usr/share/icons/Faba/48x48/notifications/notification-audio-volume-high.svg"
-else
+v
  #use the low volume icon
  notify-send "$volume  $bar" -i "/usr/share/icons/Faba/48x48/notifications/notification-audio-volume-low.svg"
 fi
