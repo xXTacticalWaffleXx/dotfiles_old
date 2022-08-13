@@ -27,7 +27,7 @@ if [[ $muted = "off" ]]; then
  #use the muted icon
  notify-send "muted" -i "/usr/share/icons/Faba/48x48/notifications/notification-audio-volume-muted.svg" -w -r 1
  #dunstify -r 1 -I "/usr/share/icons/Faba/48x48/notifications/notification-audio-volume-muted.svg" "muted"
-elif [[ $volume > "20" ]]; then
+elif [[ $volume >= "30" ]]; then
  #use the high volume icon
  notify-send "$volume  $bar" -i "/usr/share/icons/Faba/48x48/notifications/notification-audio-volume-high.svg" -w -r 1
  #dunstify -r 1 -I /usr/share/icons/Faba/48x48/notifications/notification-audio-volume-high.svg "$volume $bar"
