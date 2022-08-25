@@ -20,7 +20,7 @@
 background = #0F1143
 background-alt = #070E88
 foreground = #C5C8C6
-;foreground-alt = #4F5183
+foreground-alt = #4F5183
 ;workspace-bar = #3E2197
 workspace-bar = #D11070
 primary = #D11070
@@ -57,7 +57,7 @@ padding-right = 1
 module-margin = 1
 
 separator = |
-;separator-foreground = ${colors.foreground-alt}
+separator-foreground = ${colors.foreground-alt}
 
 font-0 = monospace;2
 font-1 = komorebi gothic:pixelsize=13;3
