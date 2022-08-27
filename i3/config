@@ -606,3 +606,7 @@ for_window [class="Steam" title="Friends List"]     floating enable
 #move focused workspace between monitors
 bindsym $mod+ctrl+greater move workspace to output right
 bindsym $mod+ctrl+less    move workspace to output left
+
+#vim layout
+bindsym $mod+ctrl+l   move workspace to output right
+bindsym $mod+ctrl+h   move workspace to output left
