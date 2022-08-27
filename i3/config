@@ -490,7 +490,7 @@ set $pink #D11070
 
 # define colors for windows:
 #class		        	    border		  bground		  text		indicator	   child_border
-client.focused		    	$lightblue	$darkblue	  $white	$mediumgrey	 $pink
+client.focused		    	$lightblue	$darkblue	  $white	$pink	       $pink
 client.unfocused	    	$darkblue	  $darkblue	  $grey		$darkgrey	   $darkgrey
 client.focused_inactive	$darkblue	  $darkblue	  $grey		$black		   $black
 client.urgent		    	  $urgentred	$urgentred	$white	$yellowbrown $yellowbrown
