@@ -61,7 +61,7 @@ separator-foreground = ${colors.foreground-alt}
 
 font-0 = monospace;2
 font-1 = komorebi gothic:pixelsize=13;3
-;font-2 = "FontAwesome:style=Regular:pixelsize=13;3"
+font-2 = "FontAwesome:style=Regular:pixelsize=13;3"
 
 modules-left = i3 playerctl
 modules-center = time date
@@ -183,6 +183,8 @@ label-foreground = ${colors.primary}
 type = custom/script
 interval = 1
 exec = ~/.config/polybar/scripts/playerctl.sh
+;label = %output%
+;label-font = 0
 
 [settings]
 screenchange-reload = true
