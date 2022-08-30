@@ -34,9 +34,11 @@ else
         artist_trunc=$album_trunc
     fi
 
+    artist_proper=$(echo $artist_trunc | sed 's/-.*//') #this is just done becase sometimes its like "paramore - topic" when listening to songs on yt
+
     # Bar text
     #echo "$artist_trunc - $title_trunc"
-    echo "$title_trunc - $artist_trunc"
+    echo "$title_trunc - $artist_proper"
 
     # Tooltip text
     #echo "<tool> <i>$title_full</i>"
