@@ -61,7 +61,7 @@ separator-foreground = ${colors.foreground-alt}
 
 font-0 = monospace;2
 font-1 = komorebi gothic:pixelsize=13;3
-font-2 = "FontAwesome:style=Regular:pixelsize=13;3"
+font-2 = FontAwesome:style=Regular:pixelsize=13;3
 
 modules-left = i3 playerctl
 modules-center = time date
@@ -163,6 +163,7 @@ label-disconnected = %{F#F0C674}%ifname%%{F#707880} disconnected
 inherit = network-base
 interface-type = wireless
 label-connected = %{F#D11070}%ifname%%{F-} %essid% %local_ip%
+;label-connected =  %essid%
 
 [module/eth]
 inherit = network-base
