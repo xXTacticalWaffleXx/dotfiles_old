@@ -26,6 +26,7 @@ workspace-bar = #D11070
 primary = #D11070
 secondary = #8ABEB7
 alert = #A54242
+alert-alt = #8B2D2D
 
 ;the default colour scheme im keeping around cause its kinda pog
 ;background = #282A2E
@@ -62,6 +63,8 @@ separator-foreground = ${colors.foreground-alt}
 font-0 = monospace;2
 font-1 = komorebi gothic:pixelsize=13;3
 font-2 = FontAwesome:style=Regular:pixelsize=13;3
+font-3 = "icomoon:style=Regular"
+font-4 = "Font Awesome 6 Free,Font Awesome 6 Free Regular:style=Regular"
 
 modules-left = i3 playerctl
 modules-center = time date
@@ -162,8 +165,15 @@ label-disconnected = %{F#F0C674}%ifname%%{F#707880} disconnected
 [module/wlan]
 inherit = network-base
 interface-type = wireless
-label-connected = %{F#D11070}%ifname%%{F-} %essid% %local_ip%
-;label-connected =  %essid%
+;label-connected = %{F#D11070}%ifname%%{F-} %essid% %local_ip%
+label-connected =  %{F#C5C8C6}%essid%
+label-connected-foreground = ${colors.primary}
+label-connected-padding-right = 1
+;label-connected-underline = ${colors.primary}
+
+label-disconnected = 
+label-disconnected-foreground = ${colors.alert-alt}
+label-disconnected-padding-right = 1
 
 [module/eth]
 inherit = network-base
@@ -184,8 +194,7 @@ label-foreground = ${colors.primary}
 type = custom/script
 interval = 1
 exec = ~/.config/polybar/scripts/playerctl.sh
-;label = %output%
-;label-font = 0
+label = %output%
 
 [settings]
 screenchange-reload = true
