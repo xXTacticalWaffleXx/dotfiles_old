@@ -8,8 +8,8 @@ changes but you should get it from the link provided tbh cause it comes with an 
 
 <h2 align="center"> programs </h2>
 
-bar: Polybar
-WM: i3
-term: xfce terminal
-notifications: dunst
-os: EndeavourOS
+bar: Polybar <br>
+WM: i3 <br>
+term: xfce terminal <br>
+notifications: dunst <br>
+os: EndeavourOS <br>
