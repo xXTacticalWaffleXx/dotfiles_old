@@ -63,7 +63,6 @@ separator-foreground = ${colors.foreground-alt}
 font-0 = monospace;2
 font-1 = komorebi gothic:pixelsize=13;3
 font-2 = FontAwesome:style=Regular:pixelsize=13;3
-font-3 = "icomoon:style=Regular"
 font-4 = "Font Awesome 6 Free,Font Awesome 6 Free Regular:style=Regular"
 
 modules-left = i3 playerctl
@@ -151,7 +150,8 @@ label = %percentage_used:2%%
 [module/cpu]
 type = internal/cpu
 interval = 2
-format-prefix = "CPU "
+;format-prefix = "CPU "
+format-prefix = " "
 format-prefix-foreground = ${colors.primary}
 label = %percentage:2%%
 
