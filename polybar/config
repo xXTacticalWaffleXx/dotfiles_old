@@ -57,10 +57,10 @@ padding-right = 1
 
 module-margin = 1
 
-separator = |
+separator = 
 separator-foreground = ${colors.foreground-alt}
 
-font-0 = noto-sans:style=regular:pixelsize=14;3
+font-0 = noto-sans:style=bold:pixelsize=13;3
 font-1 = monospace;2
 font-2 = FontAwesome:style=Regular:pixelsize=13;3
 font-3 = komorebi gothic:pixelsize=13;3
@@ -153,7 +153,10 @@ type = internal/cpu
 interval = 2
 format-prefix = "CPU "
 format-prefix-foreground = ${colors.primary}
+;format-background = ${colors.primary}
 label = %percentage:2%%
+;label-background = ${colors.primary}
+label-padding = 1
 
 [network-base]
 type = internal/network
