@@ -60,15 +60,15 @@ module-margin = 1
 separator = 
 separator-foreground = ${colors.foreground-alt}
 
-font-0 = noto-sans:style=bold:pixelsize=13;3
-font-1 = monospace;2
+font-0 = noto-sans:style=Regular:pixelsize=13;3
+;font-1 = monospace;2
 font-2 = FontAwesome:style=Regular:pixelsize=13;3
-font-3 = komorebi gothic:pixelsize=13;3
-font-4 = "Font Awesome 6 Free,Font Awesome 6 Free Regular:style=Regular:pixelsize=13"
+font-1 = komorebi gothic:pixelsize=13;3
+;font-2 = "Font Awesome 6 Free,Font Awesome 6 Free Regular:style=Regular:pixelsize=13"
 
 modules-left = i3 playerctl
 modules-center = time date
-modules-right = filesystem pulseaudio memory cpu wlan
+modules-right = filesystem pulseaudio wlan
 
 cursor-click = pointer
 cursor-scroll = ns-resize
@@ -144,14 +144,14 @@ label-indicator-background = ${colors.secondary}
 [module/memory]
 type = internal/memory
 interval = 2
-format-prefix = "RAM "
+format-prefix = " "
 format-prefix-foreground = ${colors.primary}
 label = %percentage_used:2%%
 
 [module/cpu]
 type = internal/cpu
 interval = 2
-format-prefix = "CPU "
+format-prefix = " "
 format-prefix-foreground = ${colors.primary}
 ;format-background = ${colors.primary}
 label = %percentage:2%%
