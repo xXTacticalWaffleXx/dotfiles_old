@@ -23,7 +23,7 @@ muted=$(amixer -D pulse get Master | grep '%' | head -n 1 | cut -d ']' -f 2 | cu
 echo $muted
 
 bar=$(seq -s "─" $(($volume / 5)) | sed 's/[0-9]//g')
-if [[ $muted = "off" ]]; then
+if [[ $muted = "off" || $volume == "0" ]]; then
  #use the muted icon
  notify-send "muted" -i "/usr/share/icons/Faba/48x48/notifications/notification-audio-volume-muted.svg" -r 1
  #dunstify -r 1 -I "/usr/share/icons/Faba/48x48/notifications/notification-audio-volume-muted.svg" "muted"
