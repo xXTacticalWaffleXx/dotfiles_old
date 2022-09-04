@@ -14,15 +14,17 @@ else
     # Other characters to watchout for are <, >, and '
     # sed 'em with &lt; &gt; and &#39; respectively
     
-    album_full=$(playerctl metadata -f '{{album}}'| sed 's/&/&amp;/g')
-    album_trunc=$(playerctl metadata -f '{{trunc(album,45)}}'| sed 's/&/&amp;/g')
+    # album_full=$(playerctl metadata -f '{{album}}'| sed 's/&/&amp;/g')
+    # album_trunc=$(playerctl metadata -f '{{trunc(album,45)}}'| sed 's/&/&amp;/g')
     
-    artist_full=$(playerctl metadata -f {{artist}}| sed 's/&/&amp;/g')
-    artist_trunc=$(playerctl metadata -f '{{trunc(artist,45)}}'| sed 's/&/&amp;/g')
+    # artist_full=$(playerctl metadata -f {{artist}}| sed 's/&/&amp;/g')
+    # artist_trunc=$(playerctl metadata -f '{{trunc(artist,45)}}'| sed 's/&/&amp;/g')
 
-    title_full=$(playerctl metadata -f {{title}}| sed 's/&/&amp;/g')
-    title_trunc=$(playerctl metadata -f '{{trunc(title,45)}}'| sed 's/&/&amp;/g')
+    # title_full=$(playerctl metadata -f {{title}}| sed 's/&/&amp;/g')
+    # title_trunc=$(playerctl metadata -f '{{trunc(title,45)}}'| sed 's/&/&amp;/g')
 
+    # i commented these sed lines out because im not using Pango-markup im just piping this output
+    # straight to polybar where it renders incorrectly
 
     if (( ${#album_full} == 0 )); then
         album_full='n.a.'
