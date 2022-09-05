@@ -13,3 +13,7 @@ WM: i3 <br>
 term: xfce terminal <br>
 notifications: dunst <br>
 os: EndeavourOS <br>
+
+<h2 align="center"> pictures </h2>
+  <img src="./pictures/1.png">
+  <img src="./pictures/2.png">
