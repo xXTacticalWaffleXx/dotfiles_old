@@ -15,5 +15,5 @@ notifications: dunst <br>
 os: EndeavourOS <br>
 
 <h2 align="center"> pictures </h2>
-  <img src="./pictures/1.png">
-  <img src="./pictures/2.png">
+  <img src="./.config/pictures/1.png">
+  <img src="./.config/pictures/2.png">
