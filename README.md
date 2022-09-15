@@ -12,6 +12,7 @@ bar: Polybar <br>
 WM: i3 <br>
 term: xfce terminal <br>
 notifications: dunst <br>
+lock: i3lock-color <br>
 os: EndeavourOS <br>
 
 <h2 align="center"> pictures </h2>
