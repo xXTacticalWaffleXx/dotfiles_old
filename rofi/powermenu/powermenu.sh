@@ -80,12 +80,14 @@ case $chosen in
         fi
         ;;
     $lock)
-		if [[ -f /usr/bin/i3lock ]]; then
-			i3lock
-		elif [[ -f /usr/bin/betterlockscreen ]]; then
-			betterlockscreen -l
-		fi
-        ;;
+    	sleep 0.2 # this line is here because otherwise you see the fading away powermenu
+    	../scripts/lock.sh
+		#if [[ -f /usr/bin/i3lock ]]; then
+		#	i3lock
+		#elif [[ -f /usr/bin/betterlockscreen ]]; then
+		#	betterlockscreen -l
+		#fi
+    	;;
     $suspend)
 		ans=$(confirm_exit &)
 		if [[ $ans == "yes" || $ans == "YES" || $ans == "y" || $ans == "Y" ]]; then
