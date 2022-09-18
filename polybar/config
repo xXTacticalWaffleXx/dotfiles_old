@@ -128,7 +128,7 @@ format-volume = <label-volume>
 
 label-volume = %percentage%%
 
-label-muted = muted
+label-muted = "%{F#D11070}%{F-} muted"
 label-muted-foreground = ${colors.disabled}
 
 [module/xkeyboard]
