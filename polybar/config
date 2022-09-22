@@ -64,9 +64,10 @@ font-0 = noto-sans:style=Regular:pixelsize=13;2
 ;font-1 = monospace;2
 font-2 = FontAwesome:style=Regular:pixelsize=13;3
 font-1 = komorebi gothic:pixelsize=13;3
-;font-2 = "Font Awesome 6 Free,Font Awesome 6 Free Regular:style=Regular:pixelsize=13"
+;font-3 = "FantasqueSansMono Nerd Font:style=Regular;3"
+font-3 = feather:style=Bold:pixelsize=13;4
 
-modules-left = i3 playerctl
+modules-left = i3 playerctl playerctl-prev playerctl-play-pause playerctl-next
 modules-center = time date
 modules-right = filesystem pulseaudio wlan
 
@@ -199,7 +200,32 @@ label-foreground = ${colors.primary}
 type = custom/script
 interval = 1
 exec = ~/.config/polybar/scripts/playerctl.sh
+label =   %{F#C5C8C6}%output%
+label-foreground = ${colors.primary}
+
+[module/playerctl-prev]
+interval = 1
+type = custom/script
+click-left = playerctl previous
+exec = ~/.config/polybar/scripts/prev.sh
 label = %output%
+label-foreground = ${colors.primary}
+
+[module/playerctl-play-pause]
+interval = 1
+type = custom/script
+click-left = playerctl play-pause
+exec = ~/.config/polybar/scripts/playpause.sh
+label = %output%
+label-foreground = ${colors.primary}
+
+[module/playerctl-next]
+interval = 1
+type = custom/script
+click-left = playerctl next
+exec = ~/.config/polybar/scripts/next.sh
+label = %output%
+label-foreground = ${colors.primary}
 
 [settings]
 screenchange-reload = true

@@ -2,9 +2,11 @@
 
 # xfce4-genmon script for displaying current song via playerctl
 
-player=$(playerctl metadata -f {{playerName}})
+player=$(playerctl metadata -f {{playerName}} 2>&1)
+dingus=$(playerctl metadata 2>&1)
 
-if [[ "$(playerctl status)" != "Playing" ]] && [[ $player != "spotify" ]]; then
+if [[ $dingus == "No players found" ]]; then
+#if [[ "$(playerctl status)" != "Playing" ]] && [[ $player != "spotify" ]]; then
 
     echo ""
 
